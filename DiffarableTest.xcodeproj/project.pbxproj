@@ -13,9 +13,41 @@
 		B7385D08285F1E90008F1AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7385D06285F1E90008F1AA6 /* Main.storyboard */; };
 		B7385D0A285F1E92008F1AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7385D09285F1E92008F1AA6 /* Assets.xcassets */; };
 		B7385D0D285F1E92008F1AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7385D0B285F1E92008F1AA6 /* LaunchScreen.storyboard */; };
+		B743562728639C5C002A3548 /* DiffableFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B743562628639C5C002A3548 /* DiffableFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B743562A28639C5C002A3548 /* DiffableFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B743562428639C5C002A3548 /* DiffableFramework.framework */; };
+		B743562B28639C5C002A3548 /* DiffableFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B743562428639C5C002A3548 /* DiffableFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B743563028639C62002A3548 /* BaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743561A28639ADE002A3548 /* BaseDataSource.swift */; };
+		F7B3A2D7156C29C8E05D0C24 /* Pods_DiffarableTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CDA8D0A2352852BAD482BC /* Pods_DiffarableTest.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B743562828639C5C002A3548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7385CF5285F1E90008F1AA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B743562328639C5C002A3548;
+			remoteInfo = DiffableFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B743562F28639C5C002A3548 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B743562B28639C5C002A3548 /* DiffableFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F4C05690E8E0B124146A33F /* Pods-DiffarableTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffarableTest.debug.xcconfig"; path = "Target Support Files/Pods-DiffarableTest/Pods-DiffarableTest.debug.xcconfig"; sourceTree = "<group>"; };
+		83F9995026A5B2F716215899 /* Pods-DiffarableTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffarableTest.release.xcconfig"; path = "Target Support Files/Pods-DiffarableTest/Pods-DiffarableTest.release.xcconfig"; sourceTree = "<group>"; };
+		B1CDA8D0A2352852BAD482BC /* Pods_DiffarableTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiffarableTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7385CFD285F1E90008F1AA6 /* DiffarableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffarableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7385D00285F1E90008F1AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7385D02285F1E90008F1AA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,10 +56,22 @@
 		B7385D09285F1E92008F1AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7385D0C285F1E92008F1AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7385D0E285F1E92008F1AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B743561A28639ADE002A3548 /* BaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSource.swift; sourceTree = "<group>"; };
+		B743562428639C5C002A3548 /* DiffableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiffableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B743562628639C5C002A3548 /* DiffableFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffableFramework.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B7385CFA285F1E90008F1AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B743562A28639C5C002A3548 /* DiffableFramework.framework in Frameworks */,
+				F7B3A2D7156C29C8E05D0C24 /* Pods_DiffarableTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B743562128639C5C002A3548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,11 +81,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FEAEFCAC82C93F9179A6447 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F4C05690E8E0B124146A33F /* Pods-DiffarableTest.debug.xcconfig */,
+				83F9995026A5B2F716215899 /* Pods-DiffarableTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEDCE60A505D2631E19D7767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1CDA8D0A2352852BAD482BC /* Pods_DiffarableTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7385CF4285F1E90008F1AA6 = {
 			isa = PBXGroup;
 			children = (
 				B7385CFF285F1E90008F1AA6 /* DiffarableTest */,
+				B743561428639AB2002A3548 /* DiffableDataSourceLibrary */,
+				B743562528639C5C002A3548 /* DiffableFramework */,
 				B7385CFE285F1E90008F1AA6 /* Products */,
+				0FEAEFCAC82C93F9179A6447 /* Pods */,
+				AEDCE60A505D2631E19D7767 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B7385CFD285F1E90008F1AA6 /* DiffarableTest.app */,
+				B743562428639C5C002A3548 /* DiffableFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +125,7 @@
 				B7385D00285F1E90008F1AA6 /* AppDelegate.swift */,
 				B7385D02285F1E90008F1AA6 /* SceneDelegate.swift */,
 				B7385D04285F1E90008F1AA6 /* ViewController.swift */,
+				B743561A28639ADE002A3548 /* BaseDataSource.swift */,
 				B7385D06285F1E90008F1AA6 /* Main.storyboard */,
 				B7385D09285F1E92008F1AA6 /* Assets.xcassets */,
 				B7385D0B285F1E92008F1AA6 /* LaunchScreen.storyboard */,
@@ -67,25 +134,73 @@
 			path = DiffarableTest;
 			sourceTree = "<group>";
 		};
+		B743561428639AB2002A3548 /* DiffableDataSourceLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DiffableDataSourceLibrary;
+			sourceTree = "<group>";
+		};
+		B743562528639C5C002A3548 /* DiffableFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B743562628639C5C002A3548 /* DiffableFramework.h */,
+			);
+			path = DiffableFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B743561F28639C5C002A3548 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B743562728639C5C002A3548 /* DiffableFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B7385CFC285F1E90008F1AA6 /* DiffarableTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7385D11285F1E92008F1AA6 /* Build configuration list for PBXNativeTarget "DiffarableTest" */;
 			buildPhases = (
+				C7D347A7C9223F15E0E6792E /* [CP] Check Pods Manifest.lock */,
 				B7385CF9285F1E90008F1AA6 /* Sources */,
 				B7385CFA285F1E90008F1AA6 /* Frameworks */,
 				B7385CFB285F1E90008F1AA6 /* Resources */,
+				95DA5F6A845568DC9C711611 /* [CP] Embed Pods Frameworks */,
+				B743562F28639C5C002A3548 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B743562928639C5C002A3548 /* PBXTargetDependency */,
 			);
 			name = DiffarableTest;
 			productName = DiffarableTest;
 			productReference = B7385CFD285F1E90008F1AA6 /* DiffarableTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B743562328639C5C002A3548 /* DiffableFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B743562C28639C5C002A3548 /* Build configuration list for PBXNativeTarget "DiffableFramework" */;
+			buildPhases = (
+				B743561F28639C5C002A3548 /* Headers */,
+				B743562028639C5C002A3548 /* Sources */,
+				B743562128639C5C002A3548 /* Frameworks */,
+				B743562228639C5C002A3548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiffableFramework;
+			productName = DiffableFramework;
+			productReference = B743562428639C5C002A3548 /* DiffableFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +213,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					B7385CFC285F1E90008F1AA6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B743562328639C5C002A3548 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -116,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				B7385CFC285F1E90008F1AA6 /* DiffarableTest */,
+				B743562328639C5C002A3548 /* DiffableFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +250,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B743562228639C5C002A3548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95DA5F6A845568DC9C711611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffarableTest/Pods-DiffarableTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffarableTest/Pods-DiffarableTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiffarableTest/Pods-DiffarableTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D347A7C9223F15E0E6792E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiffarableTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7385CF9285F1E90008F1AA6 /* Sources */ = {
@@ -144,7 +312,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B743562028639C5C002A3548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B743563028639C62002A3548 /* BaseDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B743562928639C5C002A3548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B743562328639C5C002A3548 /* DiffableFramework */;
+			targetProxy = B743562828639C5C002A3548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B7385D06285F1E90008F1AA6 /* Main.storyboard */ = {
@@ -284,7 +468,9 @@
 		};
 		B7385D12285F1E92008F1AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4C05690E8E0B124146A33F /* Pods-DiffarableTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +498,9 @@
 		};
 		B7385D13285F1E92008F1AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F9995026A5B2F716215899 /* Pods-DiffarableTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +526,66 @@
 			};
 			name = Release;
 		};
+		B743562D28639C5C002A3548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4WFV5Z4VRN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msnazarow.DiffableFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B743562E28639C5C002A3548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4WFV5Z4VRN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msnazarow.DiffableFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +603,15 @@
 			buildConfigurations = (
 				B7385D12285F1E92008F1AA6 /* Debug */,
 				B7385D13285F1E92008F1AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B743562C28639C5C002A3548 /* Build configuration list for PBXNativeTarget "DiffableFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B743562D28639C5C002A3548 /* Debug */,
+				B743562E28639C5C002A3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
